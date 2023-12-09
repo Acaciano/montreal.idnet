@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Montreal.IdNet.Obito.API</name>
+    </assembly>
+    <members>
+        <member name="M:Montreal.IdNet.Obito.API.Controllers.DemoController.Post(Montreal.IdNet.Obito.Application.ViewModels.DemoViewModel)">
+            <summary>
+            Criar um demo
+            </summary>
+            <param name="demoViewModel">Dados de entrada para o cadastro</param>
+        </member>
+        <member name="M:Montreal.IdNet.Obito.API.Controllers.DemoController.Update(System.Guid,Montreal.IdNet.Obito.Application.ViewModels.DemoViewModel)">
+            <summary>
+            Editar um produto
+            </summary>
+            <param name="demoId">Demo Id </param>
+            <param name="demoViewModel">Dados de entrada para o cadastro</param>
+        </member>
+        <member name="M:Montreal.IdNet.Obito.API.Controllers.DemoController.Delete(System.Guid)">
+            <summary>
+            Inativar um produto
+            </summary>
+            <response code="200">Item deleted</response>
+            <response code="404">Item not found</response>
+            <param name="demoId">Demo Id</param>
+        </member>
+    </members>
+</doc>

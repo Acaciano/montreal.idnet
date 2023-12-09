@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Applications\**" />
+    <Compile Remove="Facade\**" />
+    <EmbeddedResource Remove="Applications\**" />
+    <EmbeddedResource Remove="Facade\**" />
+    <None Remove="Applications\**" />
+    <None Remove="Facade\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Montreal.IdNet.Obito.Core\Montreal.IdNet.Obito.Core.csproj" />
+    <ProjectReference Include="..\Montreal.IdNet.Obito.Domain\Montreal.IdNet.Obito.Domain.csproj" />
+    <ProjectReference Include="..\Montreal.IdNet.Obito.Infrastructure\Montreal.IdNet.Obito.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

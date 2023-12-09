@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataTransferObjects\**" />
+    <Compile Remove="Events\**" />
+    <Compile Remove="Validations\**" />
+    <EmbeddedResource Remove="DataTransferObjects\**" />
+    <EmbeddedResource Remove="Events\**" />
+    <EmbeddedResource Remove="Validations\**" />
+    <None Remove="DataTransferObjects\**" />
+    <None Remove="Events\**" />
+    <None Remove="Validations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.4" />
+    <PackageReference Include="Refit" Version="6.3.2" />
+    <PackageReference Include="TSystems.Core.Crosscutting.Bus" Version="3.0.2" />
+    <PackageReference Include="TSystems.Core.Crosscutting.Common" Version="3.0.2" />
+    <PackageReference Include="TSystems.Core.Crosscutting.Communication" Version="3.0.2" />
+    <PackageReference Include="TSystems.Core.Crosscutting.Domain" Version="3.0.2" />
+    <PackageReference Include="TSystems.Core.Crosscutting.Infrastructure" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Montreal.IdNet.Obito.Core\Montreal.IdNet.Obito.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Enum\" />
+    <Folder Include="Exceptions\Common\" />
+  </ItemGroup>
+
+</Project>
